@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="styles/css" href="./styles.css" />
+    <script
+      language="JavaScript"
+      src="index.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <p class="history"></p>
+      <p class="box" id="box">0</p>
+      <table class="table">
+        <tr>
+          <td><button onclick="calculate_percentage()">%</button></td>
+          <td><button onclick="clear_Execute()">CE</button></td>
+          <td><button onclick="clear()">C</button></td>
+          <td>
+            <button onclick="backspace()" id="backspace-button">
+              <img src="./assets/backspace.svg" />
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="calculate_inverse()">1/x</button></td>
+          <td><button onclick="calculate_square">x^2</button></td>
+          <td><button onclick="square_root()">√𝑥</button></td>
+          <td><button id="divOp" value="/" class="operator" onclick="press('/')">÷</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="press(7)">7</button></td>
+          <td><button onclick="press(8)">8</button></td>
+          <td><button onclick="press(9)">9</button></td>
+          <td><button id="mulOp" value="*" class="operator" onclick="press('*')">×</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="press(4)">4</button></td>
+          <td><button onclick="press(5)">5</button></td>
+          <td><button onclick="press(6)">6</button></td>
+          <td><button id="subOp" value="-" class="operator" onclick="press('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="press(1)">1</button></td>
+          <td><button onclick="press(2)">2</button></td>
+          <td><button onclick="press(3)">3</button></td>
+          <td><button id="addOp" value="+" class="operator" onclick="press('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="negate()">+/-</button></td>
+          <td><button onclick="press(0)">0</button></td>
+          <td><button id="dot" value="." onclick="press('.')">.</button></td>
+          <td><button id="equal" value="=" onclick="press('=')">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
